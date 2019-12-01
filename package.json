@@ -1,0 +1,25 @@
+{
+  "name": "retouch",
+  "version": "1.0.0",
+  "description": "Photographer's Portpholio  ",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-shell": "^0.7.1",
+    "multipipe": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "retouch",
+    "photograph"
+  ],
+  "author": "O.Poruchenko <[codegrabber]>",
+  "license": "ISC"
+}
