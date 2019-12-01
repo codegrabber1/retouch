@@ -1,2 +1,109 @@
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.centered_block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 450px;
+  margin: auto; }
+  .centered_block .content {
+    width: 450px;
+    height: 450px;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    background-color: blue; }
+  .centered_block .item {
+    text-align: center; }
+  .centered_block .start_button {
+    position: relative;
+    top: 50%;
+    right: -100px;
+    margin: 0;
+    padding: 8px;
+    background-color: #FFC300; }
+    .centered_block .start_button a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase; }
+  .centered_block .short_logo_block {
+    background-color: #FFC300;
+    height: 350px;
+    padding: 40px 70px 0 0; }
+    .centered_block .short_logo_block img {
+      width: 80%; }
+  .centered_block .info_block {
+    position: absolute;
+    right: 25px;
+    padding: 10px;
+    border: 1px solid #000;
+    bottom: -50px;
+    background: #fff;
+    width: 300px;
+    height: 150px; }
+    .centered_block .info_block span {
+      font-size: 22px; }
+    .centered_block .info_block ul {
+      position: absolute;
+      top: 30%;
+      left: 15%; }
+      .centered_block .info_block ul li {
+        font-size: 20px;
+        font-weight: bold; }
+  .centered_block .info_text {
+    position: absolute;
+    bottom: 0; }
+    .centered_block .info_text .link_about {
+      text-transform: uppercase;
+      color: #f00;
+      font-weight: bold; }
+
+nav {
+  border: 1px solid red;
+  overflow: hidden;
+  float: right; }
+  nav ul li {
+    display: block;
+    float: left;
+    list-style: none; }
+    nav ul li a {
+      text-decoration: none; }
+
+.nav li {
+  border: 0 solid red;
+  padding: 15px;
+  text-align: center;
+  width: 100%; }
+  .nav li:last-child {
+    padding: 5px;
+    border: 1px solid #000; }
+    .nav li:last-child a {
+      color: #000; }
+
+.nav a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold; }
+
 body {
   background: #fff; }
+
+.logo {
+  float: left;
+  width: 200px; }
