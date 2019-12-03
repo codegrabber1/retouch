@@ -12,9 +12,9 @@ p {
   margin: 0;
   padding: 0; }
 
-header {
+h1, h2 {
   margin: 0;
-  padding: 10px; }
+  padding: 0; }
 
 .centered_block {
   position: absolute;
@@ -85,11 +85,6 @@ header {
       text-transform: uppercase;
       color: #f00;
       font-weight: bold; }
-
-footer {
-  background-color: #333;
-  margin: 0;
-  padding: 10px 0; }
 
 nav {
   border: 0 solid red;
@@ -169,3 +164,27 @@ body {
 
 .red {
   border: 1px solid red; }
+
+header {
+  margin: 0;
+  padding: 10px; }
+
+footer {
+  background-color: #333;
+  margin-top: 10px;
+  padding: 25px 0; }
+  footer .footer-widget {
+    margin: 10px 0;
+    color: #f1f1f1;
+    font-size: 16px; }
+    footer .footer-widget .fw_title {
+      border-left: 5px solid red;
+      padding-left: 5px; }
+    footer .footer-widget ul li {
+      display: block;
+      float: left;
+      margin: 3px; }
+      footer .footer-widget ul li img {
+        width: 120px;
+        height: 80px;
+        object-fit: fill; }

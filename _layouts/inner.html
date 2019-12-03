@@ -41,24 +41,47 @@
       <div class="row">
         <div class="col-md-4">
           <div class="footer-widget">
+            <h3 class='fw_title'>About Us</h3>
+
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatum hic, architecto aspernatur aut totam explicabo atque vel voluptatem deserunt repellat, maiores ad aliquid.
             </p>
           </div>
         </div>
         <div class="col-md-4">
-          {% include nav.html navclass='nav-bottom' %}
-        </div>
-        <div class="col-md-4">
+
           <div class="footer-widget">
+            <h3 class='fw_title'>Widget headline</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatum hic, architecto aspernatur aut totam explicabo atque vel voluptatem deserunt repellat, maiores ad aliquid.
             </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-widget">
+            <h3 class='fw_title'>Latest works</h3>
+            <ul>
+              {% for food in site.static_files %}
+                {% if food.path contains 'images/food' %}
+                  <li>
+                    <a href="#"> <img src='{{site.baseurl}}{{ food.path }}'> </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
+    <div class='subfooter clearfix'>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            {% include nav.html navclass='nav-top' %}
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>

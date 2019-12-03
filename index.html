@@ -5,6 +5,7 @@ layout: default
 <div class="centered_block clearfix">
   <div class='content clearfix'>
         <div id="main-carousel" class="owl-carousel">
+          
           {% for food in site.static_files %}
             {% if food.path contains 'images/food' %}
               <div class='item'>
