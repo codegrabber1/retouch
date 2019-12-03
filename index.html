@@ -1,0 +1,23 @@
+---
+title: Main page
+layout: default
+---
+<div class="centered_block clearfix">
+  <div class='content clearfix'>
+        <div id="main-carousel" class="owl-carousel">
+          {% for food in site.static_files %}
+            {% if food.path contains 'images/food' %}
+              <div class='item'>
+                <a href="#"> <img src='{{ food.path }}'> </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+
+        </div>
+        <div class="start_button wow bounceInUp"
+            data-wow-delay="2s" data-wow-duration="2s">
+          <a href="main.html" class=""><img src="images/logo.png"></a>
+        </div>
+      </div>
+
+</div>

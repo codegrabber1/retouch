@@ -1,0 +1,11 @@
+<nav>
+  <ul class="{{include.navclass}}">
+    <li><a href="index.html"
+      class="{% if page.url == '/index.html' %}current{% endif %}">Home</a>
+    </li>
+    <li><a href="main.html" class="{% if page.url == '/main.html' %}current{% endif %}">Main</a></li>
+    <li><a href="portfolio.html" class="{% if page.url == '/portfolio.html' %}current{% endif %}">Food</a></li>
+    <li><a href="fashion.html" class="{% if page.url == '/fashion.html' %}current{% endif %}">Fashion</a></li>
+    <li><a href="about.html" class="{% if page.url == '/about.html' %}current{% endif %}">About Us</a></li>
+  </ul>
+</nav>

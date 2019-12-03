@@ -1,0 +1,15 @@
+---
+title: Portfolio page
+layout: inner
+---
+<div class='flex_container'>
+  {% assign image_files = site.static_files | where: "image", true %}
+
+  {% for food in image_files %}
+    {% if food.path contains 'food' %}
+      <div class='f_item'>
+        <a href="#"> <img src='{{path}}{{food.path}}'> </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

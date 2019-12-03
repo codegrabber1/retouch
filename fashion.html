@@ -1,0 +1,15 @@
+---
+title: Fashion page
+layout: inner
+---
+<div class='grid_container'>
+  <div class='grid_size'></div>
+  <div class="gutter-sizer"></div>
+  {% for fashion in site.static_files %}
+    {% if fashion.path contains 'images/fashion' %}
+      <div class='grid-item'>
+        <a href="#"> <img src='{{ fashion.path }}'> </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
