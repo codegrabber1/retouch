@@ -1,15 +1,160 @@
----
-title: Portfolio page
-layout: inner
----
-<div class='flex_container'>
-  {% assign image_files = site.static_files | where: "image", true %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <title>Portfolio page | Retouch</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="logo">
+            <a href="index.html" class="">
+              <img src="/images/logo.png" alt="logo">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <nav>
+  <ul class="nav-top">
+    <li><a href="index.html"
+      class="">Home</a>
+    </li>
+    <li><a href="main.html" class="">Main</a></li>
+    <li><a href="portfolio.html" class="current">Food</a></li>
+    <li><a href="fashion.html" class="">Fashion</a></li>
+    <li><a href="about.html" class="">About Us</a></li>
+  </ul>
+</nav>
 
-  {% for food in image_files %}
-    {% if food.path contains 'food' %}
-      <div class='f_item'>
-        <a href="#"> <img src='{{path}}{{food.path}}'> </a>
+        </div>
       </div>
-    {% endif %}
-  {% endfor %}
+    </div>
+  </header>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class='flex_container'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class='f_item'>
+        <a href="#"> <img src='http://localhost:4000/images/food/0_Smoothie-bowl-with-fresh-berries-nuts-seeds-fruit-and-vegetables.jpg'> </a>
+      </div>
+
+
+
+      <div class='f_item'>
+        <a href="#"> <img src='http://localhost:4000/images/food/11220378-3x2-xlarge.jpg'> </a>
+      </div>
+
+
+
+      <div class='f_item'>
+        <a href="#"> <img src='http://localhost:4000/images/food/2.jpeg'> </a>
+      </div>
+
+
+
+      <div class='f_item'>
+        <a href="#"> <img src='http://localhost:4000/images/food/eugene-foodshoot-table-spread.webp'> </a>
+      </div>
+
+
+
+      <div class='f_item'>
+        <a href="#"> <img src='http://localhost:4000/images/food/feast.jpg'> </a>
+      </div>
+
+
+
+      <div class='f_item'>
+        <a href="#"> <img src='http://localhost:4000/images/food/food.jpg'> </a>
+      </div>
+
+
+
+      <div class='f_item'>
+        <a href="#"> <img src='http://localhost:4000/images/food/offset_178636.jpg'> </a>
+      </div>
+
+
+
+
+
+
 </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-widget">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatum hic, architecto aspernatur aut totam explicabo atque vel voluptatem deserunt repellat, maiores ad aliquid.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <nav>
+  <ul class="nav-bottom">
+    <li><a href="index.html"
+      class="">Home</a>
+    </li>
+    <li><a href="main.html" class="">Main</a></li>
+    <li><a href="portfolio.html" class="current">Food</a></li>
+    <li><a href="fashion.html" class="">Fashion</a></li>
+    <li><a href="about.html" class="">About Us</a></li>
+  </ul>
+</nav>
+
+        </div>
+        <div class="col-md-4">
+          <div class="footer-widget">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatum hic, architecto aspernatur aut totam explicabo atque vel voluptatem deserunt repellat, maiores ad aliquid.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _site/package-lock.json
 _site/tz
 .sass-cache
@@ -5,5 +6,7 @@ _site/tz
 .jekyll-metadata
 vendor
 node_modules/
+=======
+>>>>>>> a91948335153d5edd6c92face2f571f5fc51e55a
 package-lock.json
 tz
