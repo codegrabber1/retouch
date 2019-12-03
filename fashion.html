@@ -8,7 +8,7 @@ layout: inner
   {% for fashion in site.static_files %}
     {% if fashion.path contains 'images/fashion' %}
       <div class='grid-item'>
-        <a href="#"> <img src='{{ fashion.path }}'> </a>
+        <a href="#"> <img src='{{site.baseurl}}{{ fashion.path }}'> </a>
       </div>
     {% endif %}
   {% endfor %}
