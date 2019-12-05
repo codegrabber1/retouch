@@ -31,6 +31,10 @@ nav
         font-size: 13px
         &:hover
           color: $h_menu_last_color
+          font-size: 0
+        &:hover:after
+          content: attr(data-hover)
+          font-size: 13px
     a
       color: $menu_color
       text-decoration: none

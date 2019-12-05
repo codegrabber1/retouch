@@ -17,12 +17,11 @@ h1, h2 {
   padding: 0; }
 
 .centered_block {
+  width: 100%;
   position: absolute;
   top: 20%;
-  left: 0;
   right: 0;
-  bottom: 0;
-  width: 100%;
+  left: 0;
   overflow: hidden; }
   .centered_block .content {
     position: relative;
@@ -115,7 +114,11 @@ nav {
       color: #000;
       font-size: 13px; }
       .nav li:last-child a:hover {
-        color: green; }
+        color: green;
+        font-size: 0; }
+      .nav li:last-child a:hover::after {
+        content: attr(data-hover);
+        font-size: 13px; }
   .nav li a {
     color: #fff;
     text-decoration: none;
@@ -171,7 +174,11 @@ nav {
     padding: 1px; }
 
 body {
-  background: #fff; }
+  background: #fff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center; }
 
 .logo {
   float: left;
