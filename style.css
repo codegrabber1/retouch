@@ -23,14 +23,11 @@ h1, h2 {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 450px;
   overflow: hidden; }
   .centered_block .content {
     position: relative;
-    width: 500px;
-    background-color: #f1f1f1;
-    margin: 0 auto;
-    background-color: blue; }
+    max-width: 500px;
+    margin: 0 auto; }
   .centered_block .item {
     align-items: stretch;
     text-align: center;
@@ -109,22 +106,40 @@ nav {
 
 .nav li {
   border: 0 solid red;
-  padding: 15px;
   text-align: center;
   width: 100%; }
   .nav li:last-child {
     padding: 5px;
     border: 1px solid #000; }
     .nav li:last-child a {
-      color: #000; }
-
-.nav a {
-  color: #fff;
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-  text-transform: uppercase;
-  font-weight: bold; }
+      color: #000;
+      font-size: 13px; }
+      .nav li:last-child a:hover {
+        color: green; }
+  .nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px; }
+    .nav li a:hover {
+      color: #f60; }
+  .nav li.m_food {
+    background: url("images/bg_food.png") 100% 100% no-repeat;
+    background-size: cover; }
+  .nav li.m_beauty {
+    background: url("images/bg_beauty.png") 100% 100% no-repeat;
+    background-size: cover; }
+  .nav li.m_item {
+    background: url("images/bg_items.jpg") 100% 100% no-repeat;
+    background-size: cover; }
+  .nav li.m_fashion {
+    background: url("images/bg_fashion.jpg") 100% 100% no-repeat;
+    background-size: cover; }
+  .nav li.m_portrait {
+    background: url("images/bg_portraits.jpg") 100% 100% no-repeat;
+    background-size: cover; }
 
 .flex_container {
   margin: 20px 0;
