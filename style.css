@@ -116,7 +116,7 @@ nav {
       .nav li:last-child a:hover {
         color: green;
         font-size: 0; }
-      .nav li:last-child a:hover::after {
+      .nav li:last-child a:hover:after {
         content: attr(data-hover);
         font-size: 13px; }
   .nav li a {
@@ -178,7 +178,8 @@ body {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
 
 .logo {
   float: left;
