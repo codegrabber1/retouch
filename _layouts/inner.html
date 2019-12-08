@@ -8,36 +8,37 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/megafish.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.css" rel="stylesheet">
   <link rel="stylesheet" href="{{site.baseurl}}/style.css">
   <title>{{page.title}} | {{site.title}}</title>
 </head>
 <body>
-  <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="logo">
-            <a href="index.html" class="">
-              <img src="{{site.baseurl}}/images/logo.png" alt="logo">
+  <div class="wrapper">
+    <header class="clearfix">
+      <div class="header_wrap clearfix">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="logo clearfix">
+                <a href="index.html" class="">
+                  <img src="{{site.baseurl}}/images/logo.png" alt="logo">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-8">
+              {% include nav.html navclass='nav-top' %}
+            </div>
           </div>
         </div>
-        <div class="col-md-8">
-          {% include nav.html navclass='nav-top' %}
-        </div>
       </div>
-    </div>
-  </header>
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          {{content}}
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
+    <section class="clearfix">
+      {{content}}
+    </section>
+  </div>
   <footer>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
           <div class="footer-widget">
@@ -72,12 +73,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class='subfooter clearfix'>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            {% include nav.html navclass='nav-top' %}
+            <ul>
+              <li><a href="#">Soc media</a></li>
+              <li><a href="#">Soc media</a></li>
+              <li><a href="#">Soc media</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -86,8 +91,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/js/superfish.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.js"></script>
   <script src="{{site.baseurl}}/js/main.js"></script>
   <script>
     new WOW().init();

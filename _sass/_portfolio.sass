@@ -1,5 +1,4 @@
 .flex_container
-  margin: 20px 0
   display: -webkit-flex
   display: -ms-flex
   display: flex
@@ -15,13 +14,10 @@
       min-height: 220px
       height: 100%
       width: 100%
-.grid_container
-  width: 100%
-  .grid_size
-    width: 1%
-  .gutter-sizer
-     width: 1%
-  .grid-item
-    position: relative
-    width: 33%
-    padding: 1px
+.grid
+.grid-sizer,
+.grid-item
+  width: 33.333%
+  padding: 1px
+.grid-item
+  float: left

@@ -2,14 +2,20 @@
 title: Fashion page
 layout: inner
 ---
-<div class='grid_container'>
-  <div class='grid_size'></div>
-  <div class="gutter-sizer"></div>
-  {% for fashion in site.static_files %}
-    {% if fashion.path contains 'images/fashion' %}
-      <div class='grid-item'>
-        <a href="#"> <img src='{{site.baseurl}}{{ fashion.path }}'> </a>
-      </div>
-    {% endif %}
-  {% endfor %}
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-12">
+        <div class="grid clearfix">
+            <div class="grid-sizer"></div>
+          {% for fashion in site.static_files %}
+            {% if fashion.path contains 'images/fashion' %}
+              <div class='grid-item'>
+                <a href="#"> <img src='{{site.baseurl}}{{ fashion.path }}'> </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+    </div>
+  </div>
 </div>
