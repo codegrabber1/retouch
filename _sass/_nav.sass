@@ -19,17 +19,18 @@ nav
     padding: 10px
     a
       text-decoration: none
-      //color: $font_menu
+      font-family: 'Teko', sans-serif
+      font-size: 20px
+      color: #333!important
       &:hover,
-      &.active
-        text-decoration: none
-        //color: $blue_col
-        //background-color: $yell_col
+      &.current
+        color: red!important
 .toggle-mnu
   display: block
   width: 28px
   height: 28px
   margin-top: 14px
+  cursor: pointer
   span:after, span:before
     content: ""
     position: absolute
@@ -82,7 +83,8 @@ nav
       &:hover
         color: $h_menu_color
     &.m_food
-      background: url('images/bg_food.png') 100% 100% no-repeat
+      background-position: 100% 100%
+      background-repeat: no-repeat
       background-size: cover
     &.m_beauty
       background: url('images/bg_beauty.png') 100% 100% no-repeat
@@ -97,7 +99,7 @@ nav
       background: url('images/bg_portraits.jpg') 100% 100% no-repeat
       background-size: cover
 ul.about_nav
-  width: 50%
+  width: 100%
   margin: 0 auto
   li
     float: left
@@ -108,3 +110,9 @@ ul.about_nav
       padding: 0 10px
       display: block
       text-align: center
+      font-family: 'Teko', sans-serif
+      font-size: 20px
+      color: #333!important
+      &:hover,
+      &.current
+        color: red!important

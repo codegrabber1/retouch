@@ -20,7 +20,7 @@ h1, h2 {
   width: 100%;
   position: absolute;
   top: 20%;
-  right: 3%; }
+  right: 0; }
   .centered_block .content {
     position: relative;
     max-width: 500px;
@@ -36,14 +36,14 @@ h1, h2 {
       width: 100%; }
   .centered_block .start_button {
     position: absolute;
-    top: 40%;
-    right: -30%;
+    top: 50%;
+    right: -20%;
     margin: 20px;
     padding: 8px;
-    background-color: #FFC300;
     z-index: 1;
     padding: 8px;
-    background-color: #FFC300; }
+    background-color: #FFC300;
+    width: 90%; }
     .centered_block .start_button a {
       color: #fff;
       text-decoration: none;
@@ -101,15 +101,19 @@ nav {
     margin: 0;
     padding: 10px; }
     nav > ul a, nav li a {
-      text-decoration: none; }
-      nav > ul a:hover, nav > ul a.active, nav li a:hover, nav li a.active {
-        text-decoration: none; }
+      text-decoration: none;
+      font-family: 'Teko', sans-serif;
+      font-size: 20px;
+      color: #333 !important; }
+      nav > ul a:hover, nav > ul a.current, nav li a:hover, nav li a.current {
+        color: red !important; }
 
 .toggle-mnu {
   display: block;
   width: 28px;
   height: 28px;
-  margin-top: 14px; }
+  margin-top: 14px;
+  cursor: pointer; }
   .toggle-mnu span:after, .toggle-mnu span:before {
     content: "";
     position: absolute;
@@ -160,7 +164,8 @@ nav {
     .nav li a:hover {
       color: #f60; }
   .nav li.m_food {
-    background: url("images/bg_food.png") 100% 100% no-repeat;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
     background-size: cover; }
   .nav li.m_beauty {
     background: url("images/bg_beauty.png") 100% 100% no-repeat;
@@ -176,7 +181,7 @@ nav {
     background-size: cover; }
 
 ul.about_nav {
-  width: 50%;
+  width: 100%;
   margin: 0 auto; }
   ul.about_nav li {
     float: left;
@@ -186,7 +191,12 @@ ul.about_nav {
     ul.about_nav li a {
       padding: 0 10px;
       display: block;
-      text-align: center; }
+      text-align: center;
+      font-family: 'Teko', sans-serif;
+      font-size: 20px;
+      color: #333 !important; }
+      ul.about_nav li a:hover, ul.about_nav li a.current {
+        color: red !important; }
 
 .flex_container {
   display: -webkit-flex;
@@ -223,8 +233,22 @@ ul.about_nav {
   /* Small Devices, Tablets */ }
 
 @media only screen and (max-width: 768px) {
+  .logo {
+    float: right !important; }
+  nav {
+    float: none; }
   .sf-menu {
-    display: none !important; } }
+    display: none !important; }
+  .centered_block .info_text {
+    position: unset; }
+  .centered_block .info_block {
+    bottom: 20px; }
+  ul.about_nav {
+    width: 100%; }
+  .centered_block .start_button {
+    right: -37px; }
+    .centered_block .start_button img {
+      width: 400px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -265,7 +289,8 @@ body {
   display: -ms-flex;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  min-width: 320px; }
 
 .logo {
   width: 200px;

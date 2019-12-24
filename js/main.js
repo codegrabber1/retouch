@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
   $("#my-menu").mmenu({
     extensions: ["widescreen", "pagedim-black", "effect-menu-slide", "effect-listitems-slide", "fx-menu-zoom", "fx-panels-zoom", "theme-dark"],
     navbar: {
-      title: "Western Rehabilitation and Sports Center"
+      title: "Retouch"
     }
   });
   var api = $("#my-menu").data("mmenu");
@@ -50,3 +50,7 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
+
+/**
+ * Add css properties to the list of categoriesNaN
+ */

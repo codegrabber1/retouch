@@ -11,6 +11,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/megafish.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Teko:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{site.baseurl}}/style.css">
   <title>{{page.title}} | {{site.title}}</title>
 </head>
@@ -20,14 +21,14 @@
       <div class="header_wrap clearfix">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-6 col-md-4">
+            <div class="col-5 col-sm-6 col-md-8 order-md-4">
+              {% include nav.html navclass='nav-top' %}
+            </div>
+            <div class="col-7 col-sm-6 col-md-4">
               <div class="logo clearfix">
                 <a href="index.html" class="">
                   <img src="{{site.baseurl}}/images/logo.png" alt="logo">
               </div>
-            </div>
-            <div class="col-sm-6 col-md-8">
-              {% include nav.html navclass='nav-top' %}
             </div>
           </div>
         </div>

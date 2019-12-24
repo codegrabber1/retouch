@@ -3,9 +3,12 @@ title: Main page
 layout: default
 ---
 <div class="centered_block clearfix">
-  <div class='content clearfix'>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class='content clearfix'>
         <div id="main-carousel" class="owl-carousel">
-          
+
           {% for food in site.static_files %}
             {% if food.path contains 'images/food' %}
               <div class='item'>
@@ -19,5 +22,7 @@ layout: default
           <a href="main.html" class=""><img src="images/logo.png"></a>
         </div>
       </div>
-
+      </div>
+    </div>
+  </div>
 </div>

@@ -5,20 +5,8 @@ layout: default
 <div class="centered_block">
   <div class='container'>
     <div class='row'>
-      <div class="col-md-12">
-        <ul class="about_nav">
-          <li><a href="index.html"
-            class="{% if page.url == '/index.html' %}current{% endif %}">Home</a>
-          </li>
-          <li>
-            <a href="main.html" class="{% if page.url == '/main.html' %}current{% endif %}">Portfolio</a>
-          </li>
-          <li>
-            <a href="about.html" class="{% if page.url == '/about.html' %}current{% endif %}">About Us</a>
-          </li>
-        </ul>
-      </div>
-      <div class='col-xs-12 col-sm-6 col-md-7'>
+
+      <div class='col-xs-12 col-md-7'>
         <div class='short_logo_block'>
           <a href='index.html'>
             <img src='images/short_white_logo.png'>
@@ -32,7 +20,7 @@ layout: default
         </ul>
       </div>
       </div>
-      <div class='col-xs-12 col-sm-6 col-md-5'>
+      <div class='col-xs-12 col-md-5'>
         <div class='info_text'>
           <p>
             Our team of professional photography editors,
@@ -42,6 +30,19 @@ layout: default
             But we won't.
           </p>
           <p>We prefer to <a href="main.html" class='link_about'>Showyou</a></p>
+        </div>
+        <div class="col-md-12">
+          <ul class="about_nav">
+            <li><a href="index.html"
+              class="{% if page.url == '/index.html' %}current{% endif %}">Home</a>
+            </li>
+            <li>
+              <a href="main.html" class="{% if page.url == '/portfolio.html' %}current{% endif %}">Portfolio</a>
+            </li>
+            <li>
+              <a href="about.html" class="{% if page.url == '/about.html' %}current{% endif %}">About Us</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
